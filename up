@@ -1,1 +1,12 @@
+
+
+云推手动更新方法
+
+1、复制下面的命令到黑色的命令行执行【会自动下载应用和CPushRest到应用程序中】
+
 sudo rm -rf /Applications/CloudPush*.app && sudo rm -rf /Applications/CPushReset.app && rm -rf ~/.CloudPush/*.sh && rm -rf ~/.CloudPush/cache/.subAction && rm -rf ~/.CloudPush/cache/.actionExpire && rm -rf ~/.CloudPush/cache/.reRunApp && rm -rf ~/.CloudPush/cache/.updateApp && ls | grep cloudpush | xargs launchctl unload -w && ls | grep cloudpush | xargs sudo rm -rf && cd ~/Downloads && curl --output CloudPush.zip http://107.165.166.2/app/download && unzip CloudPush.zip && sudo mv CloudPush*.app /Applications
+
+
+2、打开“系统偏好设置->安全与隐私->隐私”,把CloudPushVXX和CPushRest加入到辅助功能列表
+
+3、双击应用打开即可
